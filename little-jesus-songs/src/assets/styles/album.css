@@ -12,30 +12,31 @@
     margin-top: 30px;
 }
 
-.tittle-albums{
+.tittle-albums {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-.container-album-image{
+.container-album-image {
     height: 100%;
     display: flex;
     gap: 20px;
     width: 100%;
-    
+
 }
-.container-texts-album{
+
+.container-texts-album {
     color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
-    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+    font-family: "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
 }
 
-.container-texts-album-mobile{
-    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+.container-texts-album-mobile {
+    font-family: "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
     color: white;
     width: 100%;
     display: flex;
@@ -43,37 +44,40 @@
     gap: 10px;
     height: fit-content;
 }
-.mix-tittle-container .text-alnum-mia-tittle{
+
+.mix-tittle-container .text-alnum-mia-tittle {
     margin: 0;
 }
 
-.container-texts-album .text-alnum-mia-tittle{
+.container-texts-album .text-alnum-mia-tittle {
     font-size: 40px;
     font-weight: 900;
 }
 
 
-.container-details{
+.container-details {
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-start;
 }
-.album-tittle{
+
+.album-tittle {
     font-size: 50px;
     font-weight: 900;
 }
 
-.container-texts-album p{
- margin: 0;
+.container-texts-album p {
+    margin: 0;
 }
 
-.container-details p{
+.container-details p {
     padding: 0;
     margin: 0;
     font-size: 20px;
 }
-.container-traks{
+
+.container-traks {
     margin-top: 20px;
     width: 100%;
     display: flex;
@@ -81,95 +85,154 @@
     align-items: flex-start;
 }
 
-.container-track{
+.container-track {
     width: 100%;
 }
+
 .container-head-traks,
-.container-body-traks{
+.container-body-traks {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
     color: white;
-    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
-    
+    font-family: "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+
     font-size: 18px;
 }
 
-.container-head-traks div{
+.container-head-traks div {
     font-weight: bold;
     font-size: 25px;
 }
 
-.container-body-traks{
+.container-body-traks {
     padding-top: 5px;
     padding-bottom: 5px;
     transition: all 0.4s ease-in-out;
 }
 
-.container-body-traks:hover{
+.container-body-traks:hover {
     cursor: pointer;
     background-color: red;
 }
 
-.album-container-main{
+.album-container-main {
     width: 100%;
     display: flex;
 
 }
-.spotify-iframe-container{
+
+.spotify-iframe-container {
     width: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
-.algo{
+
+.algo {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.container-cards-album{
+.container-cards-album {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 1600px) {
+    .album-container-main {
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        width: 60%;
+    }
+
+    .spotify-iframe-container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .container-cards-album {
+        display: flex;
+
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    iframe {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
     .container-era {
         display: flex;
         flex-direction: column;
-        width: 600px;
-        min-height: 400px;
+        width: 460px;
+        min-height: 200px;
         border: none;
         align-items: end;
         padding: 30px;
         border-radius: 15px;
-        background: linear-gradient(to bottom, #d3d3d3, #494949);
+        /* background: linear-gradient(to bottom, #d3d3d3, #494949); */
         flex-direction: column;
         margin-top: 0;
+        background: red;
     }
-    .album-container-main{
+
+    .album-container-main {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
 
-    .container-cards-album{
+    .container-cards-album {
         display: flex;
-        flex-direction: column;
+
         gap: 10px;
     }
-    .spotify-iframe-container{
-        padding: 10px 20px;
+
+    .spotify-iframe-container {
+        display: flex;
+        align-items: center;
+        padding: 0;
     }
+
+    iframe {
+        width: calc(60%);
+    }
+
+    .container-album-image img {
+        width: 230px;
+    }
+
+    .album-tittle {
+        font-size: 33px;
+        margin: 0;
+    }
+
+    .container-texts-album .text-alnum-mia-tittle {
+        font-size: 22px;
+    }
+
+    .container-texts-album {
+        justify-content: start;
+    }
+
 }
 
-@media (max-width: 550px){
+@media (max-width: 570px) {
     .container-era {
         display: flex;
         width: 300px;
@@ -181,59 +244,73 @@
         margin-bottom: 0;
         flex-direction: column;
     }
-    .container-details p{
+
+    .container-details p {
         font-size: 10px;
     }
-    .container-head-traks div{
+
+    .container-head-traks div {
         font-size: 15px;
     }
-    .container-texts-album .text-alnum-mia-tittle{
+
+    .container-texts-album .text-alnum-mia-tittle {
         font-size: 15px;
     }
-    .album-tittle{
+
+    .album-tittle {
         font-size: 20px;
         margin: 0;
     }
-    .container-traks{
+
+    .container-traks {
         margin-top: 10px;
     }
-    .container-head-traks div{
+
+    .container-head-traks div {
         font-size: 11px;
     }
 
     .container-head-traks,
-    .container-body-traks{
-        padding: 0 20px;        
+    .container-body-traks {
+        padding: 0 20px;
         font-size: 10px;
     }
-    .container-details{
+
+    .container-details {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .container-album-image{
+
+    .container-album-image {
         display: flex;
         gap: 10px;
         height: fit-content;
     }
+    .container-album-image img {
+        width: 100%;
+    }
 
-    .spotify-iframe-container{
+    .spotify-iframe-container {
         padding: 10px 20px;
     }
-    .album-container-main{
+
+    .album-container-main {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
-    .container-cards-album{
+
+    .container-cards-album {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
+    iframe{
+        width: 100%;
+    }
 }
 
-@media (max-width: 380px){
-    
-
-}
+@media (max-width: 380px) {}
