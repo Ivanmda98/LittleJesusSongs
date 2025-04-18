@@ -1,0 +1,19 @@
+.list-items-container ul li:hover{
+    transform: scale(1.2);
+    transition: ease-in-out;
+    font-weight: bold;
+}
+
+.list-items-container ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    
+}
+
+@media (min-width: 768px){
+    .list-items-container ul{
+        gap: 50px;
+    } 
+}

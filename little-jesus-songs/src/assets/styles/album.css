@@ -1,0 +1,239 @@
+.container-era {
+    display: flex;
+    width: 700px;
+    min-height: 400px;
+    border: none;
+    align-items: end;
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #d3d3d3, #494949);
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.tittle-albums{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container-album-image{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    
+}
+.container-texts-album{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+}
+
+.container-texts-album-mobile{
+    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    height: fit-content;
+}
+.mix-tittle-container .text-alnum-mia-tittle{
+    margin: 0;
+}
+
+.container-texts-album .text-alnum-mia-tittle{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.container-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+.album-tittle{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.container-texts-album p{
+ margin: 0;
+}
+
+.container-details p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.container-traks{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-track{
+    width: 100%;
+}
+.container-head-traks,
+.container-body-traks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    color: white;
+    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+    
+    font-size: 18px;
+}
+
+.container-head-traks div{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-body-traks{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.container-body-traks:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.album-container-main{
+    width: 100%;
+    display: flex;
+
+}
+.spotify-iframe-container{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.algo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cards-album{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width: 700px){
+    .container-era {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        min-height: 400px;
+        border: none;
+        align-items: end;
+        padding: 30px;
+        border-radius: 15px;
+        background: linear-gradient(to bottom, #d3d3d3, #494949);
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .album-container-main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .container-cards-album{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .spotify-iframe-container{
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 550px){
+    .container-era {
+        display: flex;
+        width: 300px;
+        min-height: 200px;
+        border: none;
+        align-items: end;
+        border-radius: 15px;
+        background: linear-gradient(to bottom, #d3d3d3, #494949);
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .container-details p{
+        font-size: 10px;
+    }
+    .container-head-traks div{
+        font-size: 15px;
+    }
+    .container-texts-album .text-alnum-mia-tittle{
+        font-size: 15px;
+    }
+    .album-tittle{
+        font-size: 20px;
+        margin: 0;
+    }
+    .container-traks{
+        margin-top: 10px;
+    }
+    .container-head-traks div{
+        font-size: 11px;
+    }
+
+    .container-head-traks,
+    .container-body-traks{
+        padding: 0 20px;        
+        font-size: 10px;
+    }
+    .container-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .container-album-image{
+        display: flex;
+        gap: 10px;
+        height: fit-content;
+    }
+
+    .spotify-iframe-container{
+        padding: 10px 20px;
+    }
+    .album-container-main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .container-cards-album{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 380px){
+    
+
+}

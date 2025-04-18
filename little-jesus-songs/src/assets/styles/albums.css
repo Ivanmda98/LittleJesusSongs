@@ -1,0 +1,13 @@
+.container-albums{
+    padding: 72px 20px;
+}
+
+.tittle-albums{
+    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+.container-album{
+    display: flex;
+    padding: 0 20px;
+}

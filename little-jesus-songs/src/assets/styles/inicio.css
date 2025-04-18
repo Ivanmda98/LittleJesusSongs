@@ -1,0 +1,113 @@
+.container-inicio{
+    width: 100%;
+    height: calc(90vh);
+    padding: 72px 20px;
+    display: flex;
+    gap: 30px;
+}
+
+#home {
+    scroll-margin-top: 80px;
+}
+
+.inicio-rigth-side,
+.inicio-left-side{
+    flex: 1;
+    overflow-y: hidden;
+    margin-top: 20px;
+}
+
+.inicio-rigth-side{
+    background-color: yellow;
+    padding: 10px;
+}
+
+.inicio-left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtittle-inicio,
+.tittle-inicio{
+    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+    
+}
+
+.tittle-inicio{
+    font-size: 60px;
+}
+
+.subtittle-inicio{
+    font-size: 30px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-tittle{
+    font-family:  "Alumni Sans Pinstripe", "Inter", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+}
+
+@media (max-width: 1600px){
+    .container-inicio{
+        height: calc(90%);
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-tittle{
+        font-size: 70px;
+    }
+    .main-container{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px){
+    
+    .cards-tittle{
+        font-size: 50px;
+    }
+    .main-container{
+        gap: 10px;
+        align-items: center;
+    }
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+
+}
+
+@media (max-width: 600px){
+    
+    .tittle-inicio{
+        font-size: 40px;
+    }
+    
+    .subtittle-inicio{
+        font-size: 20px;
+    }
+}
